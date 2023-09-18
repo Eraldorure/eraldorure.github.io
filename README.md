@@ -2,6 +2,6 @@ Hello, so there's nothing much to say here except that this is a GitHub Pages pr
 
 I have chosen a MIT License (even though I don't know a single thing a bout licensing in general), all the terms and conditions are in there.
 
-Okay bye
+Okay bye now
 
-- Eraldor
+Eraldor
