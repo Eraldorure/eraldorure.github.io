@@ -7,15 +7,18 @@
     <title>Eraldor</title>
     <style>
         * {
-            font-family: sans-serif; }
+            font-family: serif;
+            transition: 450ms;
+        }
         body {
-            background-color: #222; }
+            background-color: #222;
+        }
         .maintitle {
             margin-top: 13em;
             background-color: transparent;
             text-align: center;
             color: #eee;
-            transition: 500ms; }
+        }
         .maintitle:hover {
             cursor: pointer;
             margin-top: 4em;
@@ -24,7 +27,11 @@
             letter-spacing: 1rem;
             color: #222;
             background-color: #009696;
-            box-shadow: 0 0 80px 80px #099; }
+            box-shadow: 0 0 80px 80px #099;
+        }
+        body:has(.maintitle:hover) {
+            background-color: #111;
+        }
     </style>
 </head>
 <body>
