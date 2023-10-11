@@ -1,45 +1,18 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
     <meta charset="utf-8"/>
     <meta name="author" content="Eraldor"/>
-    <link rel="icon" href="assets/avatar.png"/>
     <title>Eraldor</title>
-    <style>
-        * {
-            font-family: serif;
-            transition: 450ms;
-        }
-        body {
-            background-color: #222;
-        }
-        .maintitle {
-            margin-top: 13em;
-            background-color: transparent;
-            text-align: center;
-            color: #eee;
-        }
-        .maintitle:hover {
-            cursor: pointer;
-            margin-top: 4em;
-            padding: 1em;
-            font-size: 5em;
-            letter-spacing: 1rem;
-            color: #222;
-            background-color: #009696;
-            box-shadow: 0 0 80px 80px #099;
-        }
-        body:has(.maintitle:hover) {
-            background-color: #111;
-        }
-    </style>
+    <link rel="icon" href="assets/avatar.png"/>
+    <link rel="stylesheet" href="code/style.css">
 </head>
 <body>
-    <h1 class=maintitle onclick="PlayAudio('assets/rickroll.mp3')">Click here</h1>
-    <script>
-        function PlayAudio(url) {
-            new Audio(url).play();
-        }
-    </script>
+    <main>
+        <h1 class=main-title onclick="PlayAudio('assets/rickroll.mp3');
+            SetIDByClass('main-title', 'big');
+            SetTextByClass('main-title', 'Gotcha lol')">Click here</h1>
+    </main>
+    <script src="code/code.js" type="text/javascript"></script>
 </body>
 </html>

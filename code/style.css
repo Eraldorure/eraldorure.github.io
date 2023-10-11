@@ -1,0 +1,34 @@
+* {
+    font-family: serif;
+    transition: 450ms;
+}
+body {
+    background-color: #222;
+}
+.main-title {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #eee;
+}
+.main-title:hover {
+    cursor: pointer;
+    font-size: 5em;
+    letter-spacing: 1rem;
+    color: #222;
+    background-color: #009696;
+    box-shadow: 0 0 80px 80px #099;
+}
+.main-title#big {
+    margin: 0;
+    top: 50%;
+    left: 50%;
+    vertical-align: center;
+}
+body:has(.main-title:hover) {
+    background-color: #111;
+}
