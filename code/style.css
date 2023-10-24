@@ -1,14 +1,18 @@
+@import url('https://fonts.googleapis.com/css?family=Lora:400,700');
+
 * {
-    font-family: serif;
+    font-family: lora, serif;
     transition: 450ms;
 }
 body {
     background-color: #222;
+    vertical-align: center;
 }
+
 .main-title {
     position: absolute;
     display: flex;
-    justify-content: center;
+    text-align: center;
     margin: auto;
     top: 50%;
     left: 50%;
@@ -17,18 +21,52 @@ body {
 }
 .main-title:hover {
     cursor: pointer;
-    font-size: 5em;
-    letter-spacing: 1rem;
+    font-size: 4.5em;
+    letter-spacing: 0.8rem;
     color: #222;
     background-color: #009696;
     box-shadow: 0 0 80px 80px #099;
 }
-.main-title#big {
-    margin: 0;
-    top: 50%;
-    left: 50%;
-    vertical-align: center;
-}
 body:has(.main-title:hover) {
     background-color: #111;
+}
+
+footer {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 20px;
+    color: #eee;
+    margin-bottom: 10px;
+}
+div.footer-text {
+    position: absolute;
+    text-align: left;
+    top: 0;
+    left: 0;
+    margin-left: 10px;
+    display: inline-block;
+    max-width: 45%;
+    height: 100%;
+    font-size: 15px;
+}
+div.footer-links {
+    position: absolute;
+    text-align: right;
+    top: 0;
+    right: 0;
+    margin-right: 10px;
+    display: inline-block;
+    max-width: 45%;
+    height: 100%;
+}
+.footer-title {
+    transform: translateY(-80%);
+    vertical-align: top;
+}
+.link-icon {
+    height: 100%;
+    cursor: pointer;
+    padding-left: 5px;
 }
