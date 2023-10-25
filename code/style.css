@@ -4,12 +4,17 @@
     font-family: lora, serif;
     transition: 450ms;
 }
-body {
+#background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
     background-color: #222;
     vertical-align: center;
 }
 
-.main-title {
+#main-title {
     position: absolute;
     display: flex;
     text-align: center;
@@ -19,7 +24,7 @@ body {
     transform: translate(-50%, -50%);
     color: #eee;
 }
-.main-title:hover {
+#main-title:hover {
     cursor: pointer;
     font-size: 4.5em;
     letter-spacing: 0.8rem;
@@ -27,8 +32,11 @@ body {
     background-color: #009696;
     box-shadow: 0 0 80px 80px #099;
 }
-body:has(.main-title:hover) {
+#background:has(#main-title:hover) {
     background-color: #111;
+}
+#main-title:hover + footer {
+    opacity: 0;
 }
 
 footer {
@@ -40,7 +48,7 @@ footer {
     color: #eee;
     margin-bottom: 10px;
 }
-div.footer-text {
+#footer-txt-div {
     position: absolute;
     text-align: left;
     top: 0;
@@ -49,9 +57,32 @@ div.footer-text {
     display: inline-block;
     max-width: 45%;
     height: 100%;
-    font-size: 15px;
+    background-color: blueviolet;
 }
-div.footer-links {
+.footer-txt {
+    font-size: 15px;
+    transform: translateY(-80%);
+}
+#credits {
+    position: fixed;
+} :hover {
+    text-underline-mode: simple;
+    ~ #see-links-msg {
+        opacity: 100%;
+        transition-delay: 200ms;
+        transform: translate(30px, -80%);
+    }
+}
+#see-links-msg {
+    position: fixed;
+    left: 130px;
+    margin-top: 16px;
+    font-size: 13px;
+    font-style: italic;
+    color: #aaa;
+    opacity: 0;
+}
+#footer-links-div {
     position: absolute;
     text-align: right;
     top: 0;
@@ -60,10 +91,6 @@ div.footer-links {
     display: inline-block;
     max-width: 45%;
     height: 100%;
-}
-.footer-title {
-    transform: translateY(-80%);
-    vertical-align: top;
 }
 .link-icon {
     height: 100%;
