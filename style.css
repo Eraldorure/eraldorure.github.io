@@ -3,6 +3,7 @@
 * {
     font-family: lora, serif;
     transition: 450ms;
+    color: #eee;
 }
 #background {
     position: absolute;
@@ -12,6 +13,39 @@
     height: 100%;
     background-color: #222;
     vertical-align: center;
+}
+
+header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    margin-top: 20px;
+    /*background-color: darkorange;*/
+}
+#eraldor-logo {
+    text-align: left;
+    top: 0;
+    left: 0;
+    margin-left: 20px;
+    height: 100%;
+}
+#eraldor-name {
+    font-size: 30px;
+    position: absolute;
+    text-align: left;
+    top: 0;
+    left: 110px;
+    transform: translateY(-40%);
+    cursor: pointer;
+    letter-spacing: 0.1rem;
+}
+#eraldor-name:hover {
+    letter-spacing: 0.5rem;
+    box-shadow: #099;
+}
+#eraldor-logo:hover #eraldor-logo {
+    opacity: 0;
 }
 
 #main-title {
@@ -30,12 +64,12 @@
     letter-spacing: 0.8rem;
     color: #222;
     background-color: #009696;
-    box-shadow: 0 0 80px 80px #099;
+    box-shadow: #099 0 0 80px 80px;
 }
 #background:has(#main-title:hover) {
     background-color: #111;
 }
-#main-title:hover + footer {
+#main-title:hover + footer, #main-title:hover + header {
     opacity: 0;
 }
 
@@ -45,15 +79,14 @@ footer {
     left: 0;
     width: 100%;
     height: 20px;
-    color: #eee;
-    margin-bottom: 10px;
+    margin-bottom: 20px;
 }
 #footer-txt-div {
     position: absolute;
     text-align: left;
     top: 0;
     left: 0;
-    margin-left: 10px;
+    margin-left: 20px;
     display: inline-block;
     max-width: 45%;
     height: 100%;
@@ -65,17 +98,16 @@ footer {
 }
 #credits {
     position: fixed;
-} :hover {
-    text-underline-mode: simple;
-    ~ #see-links-msg {
-        opacity: 100%;
-        transition-delay: 200ms;
-        transform: translate(30px, -80%);
-    }
+    transition-timing-function: ease-out;
+} :hover + #see-links-msg {
+    opacity: 100%;
+    transition-delay: 200ms;
+    transform: translate(30px, -80%);
 }
 #see-links-msg {
     position: fixed;
-    left: 130px;
+    pointer-events: none;
+    left: 140px;
     margin-top: 16px;
     font-size: 13px;
     font-style: italic;
@@ -87,7 +119,7 @@ footer {
     text-align: right;
     top: 0;
     right: 0;
-    margin-right: 10px;
+    margin-right: 20px;
     display: inline-block;
     max-width: 45%;
     height: 100%;

@@ -4,23 +4,30 @@
     <meta charset="utf-8"/>
     <meta name="author" content="Eraldor"/>
     <title>Eraldor</title>
-    <link rel="icon" href="assets/eraldor-avatar.png"/>
-    <link rel="stylesheet" href="code/style.css">
+    <link rel="icon" href="/assets/eraldor-avatar.png"/>
+    <link rel="stylesheet" href="/style.css">
 </head>
 <body>
 <div id="background">
-    <h1 id="main-title" onclick="PlayAudio('assets/rickroll.mp3'); SetTextByID('main-title', 'Gotcha lol')">Click here</h1>
+    <header>
+        <img src="/assets/eraldor-avatar.png" alt="Eraldor" id="eraldor-logo" style="height: 60px">
+        <h2 id="eraldor-name" onclick="window.open('https://eraldorure.github.io')">Eraldor</h2>
+        <!--<nav>
+            <h3 onclick="window.open('/tests/', '_blank')">Test</h3>
+            <h3 onclick="window.open('/projects/', '_blank')">Projects</h3>
+        </nav>-->
+    </header>
+    <h1 id="main-title" onclick="new Audio('/assets/rickroll.mp3').play(); document.getElementById('main-title').innerHTML = 'Gotcha lol'">Click here</h1>
     <footer>
         <div id="footer-txt-div">
             <p class="footer-txt" id="credits">Made by <b>Eraldor</b></p>
             <p class="footer-txt" id="see-links-msg">Check out my socials too!</p>
         </div>
         <div id="footer-links-div">
-            <img src="assets/youtube-logo.svg" alt="YouTube" class="link-icon" onclick="window.open('https://youtube.com/@Eraldor', '_blank')">
-            <img src="assets/github-logo.svg" alt="GitHub" class="link-icon" onclick="window.open('https://github.com/Eraldorure', '_blank')">
+            <img src="/assets/youtube-logo.svg" alt="YouTube" class="link-icon" onclick="window.open('https://youtube.com/@Eraldor', '_blank')">
+            <img src="/assets/github-logo.svg" alt="GitHub" class="link-icon" onclick="window.open('https://github.com/Eraldorure', '_blank')">
         </div>
     </footer>
-    <script src="code/script.js" type="text/javascript"></script>
 </div>
 </body>
 </html>
