@@ -1,26 +1,27 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="utf-8"/>
-    <meta name="author" content="Eraldor"/>
+    <meta charset="UTF-8"/>
+    <meta name="author" content="homepage"/>
     <title>Eraldor</title>
     <link rel="icon" href="/assets/eraldor-avatar.png"/>
-    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/style.css"/>
 </head>
 <body>
 <div id="background">
     <header>
-        <img src="/assets/eraldor-avatar.png" alt="Eraldor" id="eraldor-logo" style="height: 60px">
-        <h2 id="eraldor-name" onclick="window.open('https://eraldorure.github.io')">Eraldor</h2>
-        <!--<nav>
-            <h3 onclick="window.open('/tests/', '_blank')">Test</h3>
-            <h3 onclick="window.open('/projects/', '_blank')">Projects</h3>
-        </nav>-->
+        <img src="/assets/eraldor-avatar.png" alt="Eraldor" id="eraldor-logo" onclick="window.open('https://eraldorure.github.io', '_self')">
+        <h1 id="eraldor-name" onclick="window.open('https://eraldorure.github.io', '_self')">Eraldor</h1>
+        <nav id="header-nav">
+            <a class="nav-link" href="/tests/">Tests</a>
+            <a class="nav-link" href="/projects/">My Projects</a>
+            <a class="nav-link">About Me</a>
+        </nav>
     </header>
-    <h1 id="main-title" onclick="new Audio('/assets/rickroll.mp3').play(); document.getElementById('main-title').innerHTML = 'Gotcha lol'">Click here</h1>
+    <h1 id="main-title">Click here</h1>
     <footer>
         <div id="footer-txt-div">
-            <p class="footer-txt" id="credits">Made by <b>Eraldor</b></p>
+            <p class="footer-txt" id="footer-credits">Made by <b>Eraldor</b></p>
             <p class="footer-txt" id="see-links-msg">Check out my socials too!</p>
         </div>
         <div id="footer-links-div">
@@ -29,5 +30,17 @@
         </div>
     </footer>
 </div>
+<script>
+    let counter = 0
+    document.getElementById('main-title').addEventListener('click', () => {
+        counter++
+        if (counter < 2) {
+            document.getElementById('main-title').innerHTML = 'Gotcha lol'
+        } else {
+            document.getElementById('main-title').innerHTML = 'Gotcha lol (x' + counter + ')'
+        }
+        new Audio('/assets/rickroll.mp3').play()
+    })
+</script>
 </body>
 </html>
