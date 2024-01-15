@@ -1,0 +1,33 @@
+#main-title {
+    font-size: 40px;
+    position: absolute;
+    display: flex;
+    text-align: center;
+    margin: auto;
+    top: 50%;
+    left: 50%;
+    text-decoration: none;
+    transform: translate(-50%, -50%);
+}
+#main-title:hover {
+    cursor: pointer;
+    font-size: 80px;
+    letter-spacing: 1.5rem;
+    color: #222;
+    background-color: #009696;
+    box-shadow: #099 0 0 80px 80px;
+}
+body:has(#main-title:hover) {
+    background-color: #111;
+    header, footer {
+        opacity: 0;
+    }
+}
+
+footer {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    margin-bottom: 15px;
+}

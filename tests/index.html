@@ -3,14 +3,24 @@
 <head>
     <meta charset="UTF-8"/>
     <meta name="author" content="sandbox"/>
-    <title>Test</title>
-    <link rel="icon" href="/assets/eraldor-avatar.png"/>
-    <link rel="stylesheet" href="/style.css"/>
+    <title>Eraldor - Tests</title>
+    <link rel="icon" href="/assets/media/eraldor-avatar.png"/>
+    <link rel="stylesheet" href="/assets/code/shared.css"/>
 </head>
 <body>
-<div id="background">
-    <h1>Test</h1>
-    <p>hullo evry1 how u doin</p>
-</div>
+    <h1>This is a test page</h1>
+    <h2>About something I'm currently making (which means I'm also unconsciously destroying something else)</h2>
+    <p>The following sequence of number is random and has absolutely no interest nor utility whatsoever.</p>
+    <p>We can say the same for the second one.</p>
+    <p>Did you know that the third sequence was just as useless as the two that preceded it?</p>
+    <p>I currently am way too lazy to write anything near intellignent here.</p>
+<script src="/assets/code/add-header-footer.js"></script>
+<script>
+    document.getElementsByClassName('nav-lnk')[0].classList.add('current-nav-lnk')
+
+    for (let i = 0; i < 2000; i++) {
+        document.getElementsByTagName("p")[Math.floor(Math.random() * 4)].innerHTML += " " + i
+    }
+</script>
 </body>
 </html>

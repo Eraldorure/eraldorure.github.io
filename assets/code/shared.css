@@ -1,0 +1,188 @@
+@import url('https://fonts.googleapis.com/css?family=Lora:400,700');
+@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+
+/* General */
+
+* {
+    font-family: Rubik, serif;
+    transition: 450ms;
+    color: #eee;
+}
+body {
+    background-color: #222;
+}
+h1 {
+    font-size: 45px;
+    letter-spacing: 0.2rem;
+    text-decoration: #099 underline 0.2rem;
+    text-align: center;
+    margin-top: 150px;
+}
+h2 {
+    font-size: 25px;
+    letter-spacing: 0.1rem;
+    text-align: center;
+    margin-bottom: 100px;
+}
+p {
+    padding-left: 5%;
+    padding-right: 5%;
+    font-size: 18px;
+    text-align: justify;
+}
+a {
+    cursor: pointer;
+    text-decoration: underline;
+}
+a:hover {
+    color: #099;
+}
+
+/* Header */
+
+header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 70px;
+    margin-top: 20px;
+}
+#header-eraldor {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 280px;
+    height: 100%;
+    transform: translateX(-80px);
+    cursor: pointer;
+}
+#header-eraldor:hover {
+    /*background-color: #111;
+    box-shadow: #111 0 0 20px 20px;*/
+    transform: translateX(0);
+    #eraldor-name {
+        letter-spacing: 0.4rem;
+        color: #099;
+    }
+    #eraldor-logo {
+        transform: translateX(0);
+    }
+}
+#eraldor-logo {
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin-left: 20px;
+    max-height: 100%;
+    transform: translateX(-20px);
+}
+#eraldor-name {
+    position: absolute;
+    font-size: 30px;
+    font-weight: bold;
+    text-align: left;
+    top: 50%;
+    left: 115px;
+    transform: translateY(-50%);
+    letter-spacing: 0.1rem;
+    text-decoration: none;
+}
+#header-nav {
+    font-size: 20px;
+    position: absolute;
+    text-align: right;
+    vertical-align: central;
+    top: 50%;
+    right: 0;
+    margin-right: 20px;
+    max-width: 60%;
+    transform: translateY(-50%);
+}
+.nav-lnk, .current-nav-lnk {
+    margin-right: 25px;
+    margin-left: 25px;
+    text-decoration: none;
+}
+.nav-lnk:hover, .current-nav-lnk {
+    letter-spacing: 0.1rem;
+}
+.current-nav-lnk {
+    color: #099;
+    font-weight: bold;
+}
+
+/* Footer */
+
+footer {
+    position: relative;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 20px;
+    margin-bottom: 15px;
+    margin-top: 100px;
+}
+#ft-txt-div {
+    position: absolute;
+    text-align: left;
+    top: 0;
+    left: 0;
+    margin-left: 20px;
+    display: inline-block;
+    width: 45%;
+    height: 100%;
+}
+.ft-txt {
+    font-size: 15px;
+}
+#ft-credits {
+    position: absolute;
+    transition-timing-function: ease-out;
+} :hover + #see-lnk-msg {
+    opacity: 100%;
+    transition-delay: 200ms;
+    transform: translateX(40px);
+}
+#see-lnk-msg {
+    position: absolute;
+    pointer-events: none;
+    left: 140px;
+    bottom: 3px;
+    font-size: 13px;
+    font-style: italic;
+    color: #aaa;
+    opacity: 0;
+    transform: translateX(-10px);
+}
+#ft-lnk-div {
+    position: absolute;
+    text-align: right;
+    top: 0;
+    right: 0;
+    margin-right: 20px;
+    display: inline-block;
+    max-width: 45%;
+    height: 100%;
+}
+.lnk-icon {
+    height: 100%;
+    cursor: pointer;
+    margin-left: 8px;
+}
+.lnk-icon:hover {
+    background-color: #111;
+    box-shadow: #111 0 0 8px 8px;
+}
+
+/* Specific */
+
+#background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #222;
+    vertical-align: center;
+}

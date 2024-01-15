@@ -4,32 +4,13 @@
     <meta charset="UTF-8"/>
     <meta name="author" content="homepage"/>
     <title>Eraldor</title>
-    <link rel="icon" href="/assets/eraldor-avatar.png"/>
-    <link rel="stylesheet" href="/style.css"/>
+    <link rel="icon" href="/assets/media/eraldor-avatar.png"/>
+    <link rel="stylesheet" href="/assets/code/shared.css"/>
+    <link rel="stylesheet" href="/assets/code/homepage-style.css">
 </head>
 <body>
-<div id="background">
-    <header>
-        <img src="/assets/eraldor-avatar.png" alt="Eraldor" id="eraldor-logo" onclick="window.open('https://eraldorure.github.io', '_self')">
-        <h1 id="eraldor-name" onclick="window.open('https://eraldorure.github.io', '_self')">Eraldor</h1>
-        <nav id="header-nav">
-            <a class="nav-link" href="/tests/">Tests</a>
-            <a class="nav-link" href="/projects/">My Projects</a>
-            <a class="nav-link">About Me</a>
-        </nav>
-    </header>
     <h1 id="main-title">Click here</h1>
-    <footer>
-        <div id="footer-txt-div">
-            <p class="footer-txt" id="footer-credits">Made by <b>Eraldor</b></p>
-            <p class="footer-txt" id="see-links-msg">Check out my socials too!</p>
-        </div>
-        <div id="footer-links-div">
-            <img src="/assets/youtube-logo.svg" alt="YouTube" class="link-icon" onclick="window.open('https://youtube.com/@Eraldor', '_blank')">
-            <img src="/assets/github-logo.svg" alt="GitHub" class="link-icon" onclick="window.open('https://github.com/Eraldorure', '_blank')">
-        </div>
-    </footer>
-</div>
+<script src="assets/code/add-header-footer.js"></script>
 <script>
     let counter = 0
     document.getElementById('main-title').addEventListener('click', () => {
@@ -39,7 +20,7 @@
         } else {
             document.getElementById('main-title').innerHTML = 'Gotcha lol (x' + counter + ')'
         }
-        new Audio('/assets/rickroll.mp3').play()
+        new Audio('/assets/media/rickroll.mp3').play()
     })
 </script>
 </body>
