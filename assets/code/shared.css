@@ -4,7 +4,7 @@
 /* General */
 
 * {
-    font-family: Rubik, serif;
+    font-family: Rubik, sans-serif;
     transition: 450ms;
     color: #eee;
 }
@@ -12,17 +12,23 @@ body {
     background-color: #222;
 }
 h1 {
+    font-family: Lora, serif;
     font-size: 45px;
     letter-spacing: 0.2rem;
     text-decoration: #099 underline 0.2rem;
     text-align: center;
-    margin-top: 150px;
+    margin-top: 140px;
+    background-color: #111;
+    box-shadow: #111 0 -50px 20px 120px;
 }
 h2 {
+    font-family: Lora, serif;
     font-size: 25px;
     letter-spacing: 0.1rem;
     text-align: center;
-    margin-bottom: 100px;
+    margin-bottom: 130px;
+    background-color: #111;
+    box-shadow: #111 0 0 20px 60px;
 }
 p {
     padding-left: 5%;
@@ -58,8 +64,6 @@ header {
     cursor: pointer;
 }
 #header-eraldor:hover {
-    /*background-color: #111;
-    box-shadow: #111 0 0 20px 20px;*/
     transform: translateX(0);
     #eraldor-name {
         letter-spacing: 0.4rem;
@@ -122,6 +126,8 @@ footer {
     height: 20px;
     margin-bottom: 15px;
     margin-top: 100px;
+    background-color: #111;
+    box-shadow: #111 0 5px 20px 30px;
 }
 #ft-txt-div {
     position: absolute;
@@ -130,7 +136,7 @@ footer {
     left: 0;
     margin-left: 20px;
     display: inline-block;
-    width: 45%;
+    width: 300px;
     height: 100%;
 }
 .ft-txt {
@@ -149,9 +155,9 @@ footer {
     pointer-events: none;
     left: 140px;
     bottom: 3px;
-    font-size: 13px;
+    font: 13px Lora, sans-serif;
     font-style: italic;
-    color: #aaa;
+    color: #999;
     opacity: 0;
     transform: translateX(-10px);
 }
@@ -171,8 +177,8 @@ footer {
     margin-left: 8px;
 }
 .lnk-icon:hover {
-    background-color: #111;
-    box-shadow: #111 0 0 8px 8px;
+    background-color: #009595;
+    box-shadow: #099 0 0 8px 8px;
 }
 
 /* Specific */
