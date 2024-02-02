@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="author" content="Projects"/>
+    <title>Eraldor - Mes projets</title>
+    <link rel="icon" href="/assets/media/eraldor-avatar.png"/>
+    <link rel="stylesheet" href="/assets/code/shared.css"/>
+    <link rel="stylesheet" href="/assets/code/projects.css">
+</head>
+<body>
+    <h1>Mes projets</h1>
+    <h2>Une liste des projets notables auquel j'ai participé</h2>
+    <div class="project" onclick="window.open('https://github.com/Eraldorure/eraldorure.github.io', '_blank')">
+        <div class="desc">
+            <h4>eraldorure.github.io</h4>
+            <p>On pourrait considérer ce site internet comme mon premier "vrai" projet.</p>
+        </div>
+    </div>
+    <div class="project">
+        <div class="desc">
+            <h4>Je pourrais peut-être bien préparer quelque chose...</h4>
+            <p>Il est possible que je sois en train de travailler sur un nouveau projet qui n'a pas été listé ici.
+                Vérifiez donc mon <a href="https://github.com/Eraldorure?tab=repositories" target="_blank">GitHub</a> pour voir s'il y a du nouveau !</p>
+            <p>Dans l'éventualité où je décide que ce projet est suffisamment notable et/ou important pour être mentionné, je le listerai ici à la suite des autres.</p>
+        </div>
+    </div>
+<script src="/assets/code/header-footer-fr.js"></script>
+<script>
+    document.getElementsByClassName('nav-lnk')[1].classList.add('current-nav-lnk')
+    const enLink = "/en/projects/"
+    let projects = document.getElementsByClassName('project')
+    for (let i = 0; i < projects.length; i++) {
+        let index = i + 1
+        if (index === projects.length) {
+            index = ".."
+        }
+        if (i % 2 === 0) {
+            projects[i].classList.add('align-left')
+            projects[i].innerHTML = '<div class="count">' + index + '.</div>' + projects[i].innerHTML
+        } else {
+            projects[i].classList.add('align-right')
+            projects[i].innerHTML += '<div class="count">' + index + '.</div>'
+        }
+    }
+</script>
+</body>
+</html>

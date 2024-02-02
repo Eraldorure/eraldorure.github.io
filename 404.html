@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Eraldor - 404</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css?family=Lora:400,700');
+        @import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+        * {
+            text-align: center;
+            color: #eee;
+        }
+        body {
+            background-color: #222;
+        }
+        h1 {
+            position: absolute;
+            font-family: Lora, serif;
+            font-size: 6em;
+            top: 50%;
+            left: 50%;
+            color: #099;
+            transform: translate(-50%, -180%);
+        }
+        h2 {
+            position: absolute;
+            font-family: Rubik, sans-serif;
+            font-size: 2.5em;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -140%);
+        }
+        p, a {
+            position: absolute;
+            font-family: Rubik, sans-serif;
+            font-size: 1.2em;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, 70%);
+        }
+        a {
+            transition-duration: 450ms;
+            text-decoration: #099 underline;
+            transform: translate(-50%, 300%);
+        }
+        a:hover {
+            text-decoration-color: #222;
+            color: #099;
+        }
+    </style>
+</head>
+<body>
+<main>
+    <h1>404</h1>
+    <h2>Page not found</h2>
+    <p id="msg">It seems you're lost.</p>
+    <a id="lnk" href="https://eraldorure.github.io">Wanna go back to the beginning?</a>
+</main>
+<script>
+    if (navigator.language === 'fr') {
+        document.getElementById('msg').innerHTML = "Il semblerait que vous vous soyez égaré.";
+        document.getElementById('lnk').innerHTML = "On recommence ?";
+        document.body.lang = 'fr';
+    }
+</script>
+</body>
+</html>

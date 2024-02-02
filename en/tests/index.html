@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="author" content="Sandbox"/>
+    <title>Eraldor - Tests</title>
+    <link rel="icon" href="/assets/media/eraldor-avatar.png"/>
+    <link rel="stylesheet" href="/assets/code/shared.css"/>
+</head>
+<body>
+    <h1>This is a test page</h1>
+    <h2>About something I'm currently making (which means I'm also unconsciously destroying something else)</h2>
+    <p>Here is the language information:</p>
+    <p>Language: <span id="lang"></span></p>
+<script src="/assets/code/header-footer-en.js"></script>
+<script>
+    document.getElementsByClassName('nav-lnk')[0].classList.add('current-nav-lnk')
+    const frLink = "/fr/tests/"
+    document.getElementById('lang').innerHTML = navigator.language
+</script>
+</body>
+</html>

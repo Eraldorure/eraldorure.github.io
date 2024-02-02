@@ -1,5 +1,11 @@
-Hello, so there's nothing much to say here except that this is a GitHub Pages project (which can be found in its most recent version [here](https://eraldorure.github.io)).
+# [eraldorure.github.io](https://eraldorure.github.io)
 
-I have chosen a MIT License (even though I don't know a single thing a bout licensing in general), all the terms and conditions are in there.
+Welcome to my GitHub page's project!
 
-Okay bye now and have a nice day
+I made this little website with two goals in mind : first, to try a few things with front-end development, and second, to have a visible and decent enough portfolio to showcase my (potential) work.
+
+There is not much to see here, but I hope you'll enjoy your stay.
+
+***
+
+###### (C) 2023-2024 Thibaud C. ([@Eraldorure](https://github.com/Eraldorure))

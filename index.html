@@ -1,27 +1,32 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="">
 <head>
-    <meta charset="UTF-8"/>
-    <meta name="author" content="homepage"/>
+    <meta charset="UTF-8">
     <title>Eraldor</title>
-    <link rel="icon" href="/assets/media/eraldor-avatar.png"/>
-    <link rel="stylesheet" href="/assets/code/shared.css"/>
-    <link rel="stylesheet" href="/assets/code/homepage-style.css">
+    <style>
+        body {
+            background-color: #222;
+            color: #eee;
+            font-family: sans-serif;
+            text-align: center;
+        }
+        h1 {
+            font-size: 3em;
+        }
+        h2 {
+            font-size: 1.5em;
+        }
+    </style>
 </head>
 <body>
-    <h1 id="main-title">Click here</h1>
-<script src="/assets/code/add-header-footer.js"></script>
+    <h1>Redirecting...</h1>
+    <h2>If you are able to read this, try reloading the page</h2>
 <script>
-    let counter = 0
-    document.getElementById('main-title').addEventListener('click', () => {
-        counter++
-        if (counter < 2) {
-            document.getElementById('main-title').innerHTML = 'Gotcha lol'
-        } else {
-            document.getElementById('main-title').innerHTML = 'Gotcha lol (x' + counter + ')'
-        }
-        new Audio('/assets/media/rickroll.mp3').play()
-    })
+    if (navigator.language === 'fr') {
+        window.location.href = '/fr/'
+    } else {
+        window.location.href = '/en/'
+    }
 </script>
 </body>
 </html>

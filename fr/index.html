@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="author" content="Accueil"/>
+    <title>Eraldor</title>
+    <link rel="icon" href="/assets/media/eraldor-avatar.png"/>
+    <link rel="stylesheet" href="/assets/code/shared.css"/>
+    <link rel="stylesheet" href="/assets/code/homepage.css">
+</head>
+<body>
+<main>
+    <h1 id="main-title">Cliquez ici</h1>
+</main>
+<script src="/assets/code/header-footer-fr.js"></script>
+<script>
+    const enLink = "/en/"
+    let counter = 0
+    document.getElementById('main-title').addEventListener('click', () => {
+        counter++
+        if (counter < 2) {
+            document.getElementById('main-title').innerHTML = 'Je t\'ai eu lol'
+        } else {
+            document.getElementById('main-title').innerHTML = 'Je t\'ai eu lol (x' + counter + ')'
+        }
+        new Audio('/assets/media/rickroll.mp3').play()
+    })
+</script>
+</body>
+</html>

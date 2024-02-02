@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="author" content="Projects"/>
+    <title>Eraldor - My Projets</title>
+    <link rel="icon" href="/assets/media/eraldor-avatar.png"/>
+    <link rel="stylesheet" href="/assets/code/shared.css"/>
+    <link rel="stylesheet" href="/assets/code/projects.css">
+</head>
+<body>
+    <h1>My Projects</h1>
+    <h2>Here is a list of the very few projects I have going on</h2>
+    <div class="project" onclick="window.open('https://github.com/Eraldorure/eraldorure.github.io', '_blank')">
+        <div class="desc">
+            <h4>eraldorure.github.io</h4>
+            <p>One could say this website is my first project.</p>
+        </div>
+    </div>
+    <div class="project">
+        <div class="desc">
+            <h4>I may be up to something else...</h4>
+            <p>I may be working onto something that has not been put here yet. If you want to know more, you can check my <a href="https://github.com/Eraldorure?tab=repositories" target="_blank">GitHub</a> as well as my other socials.</p>
+            <p>If I deem that something worthy, I will show it there along with the rest.</p>
+        </div>
+    </div>
+<script src="/assets/code/header-footer-en.js"></script>
+<script>
+    document.getElementsByClassName('nav-lnk')[1].classList.add('current-nav-lnk')
+    const frLink = "/fr/projets/"
+    let projects = document.getElementsByClassName('project')
+    for (let i = 0; i < projects.length; i++) {
+        let index = i + 1
+        if (index === projects.length) {
+            index = ".."
+        }
+        if (i % 2 === 0) {
+            projects[i].classList.add('align-left')
+            projects[i].innerHTML = '<div class="count">' + index + '.</div>' + projects[i].innerHTML
+        } else {
+            projects[i].classList.add('align-right')
+            projects[i].innerHTML += '<div class="count">' + index + '.</div>'
+        }
+    }
+</script>
+</body>
+</html>

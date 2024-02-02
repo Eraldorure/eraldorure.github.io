@@ -20,6 +20,7 @@
 }
 body:has(#main-title:hover) {
     background-color: #111;
+    box-shadow: inset #034 0 0 100px 100px;
     header, footer {
         opacity: 0;
     }
@@ -28,8 +29,9 @@ body:has(#main-title:hover) {
 h1 {
     background-color: transparent;
     box-shadow: none;
+    padding: 0;
 }
-header:has(:hover) {
+header:hover {
     background-color: #111;
     box-shadow: #111 0 0 20px 30px;
 }
@@ -41,7 +43,7 @@ footer {
     background-color: transparent;
     box-shadow: none;
 }
-footer:has(:hover) {
+footer:hover {
     background-color: #111;
     box-shadow: #111 0 0 20px 20px;
 }
