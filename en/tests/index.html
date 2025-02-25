@@ -9,14 +9,18 @@
 </head>
 <body>
     <h1>This is a test page</h1>
-    <h2>About something I'm currently making (which means I'm also unconsciously destroying something else)</h2>
-    <p>Here is the language information:</p>
-    <p>Language: <span id="lang"></span></p>
+    <h2>Quick uninteresting tests</h2>
+    <main>
+        <p>Here is the language information:</p>
+        <p>Language: <span id="lang1"></span></p>
+        <p>Interpreted as: <span id="lang2"></span></p>
+    </main>
 <script src="/assets/code/header-footer-en.js"></script>
 <script>
     document.getElementsByClassName('nav-lnk')[0].classList.add('current-nav-lnk')
     const frLink = "/fr/tests/"
-    document.getElementById('lang').innerHTML = navigator.language
+    document.getElementById('lang1').innerHTML = navigator.language
+    document.getElementById('lang2').innerHTML = navigator.language.slice(0, 2)
 </script>
 </body>
 </html>

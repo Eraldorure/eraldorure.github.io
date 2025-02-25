@@ -7,7 +7,7 @@ document.body.innerHTML = `
         <nav id="header-nav">
             <a class="nav-lnk" title="Tests" href="/fr/tests/">Tests</a>
             <a class="nav-lnk" title="Mes projets" href="/fr/projets/">Mes projets</a>
-            <a class="nav-lnk" title="Qui suis-je ? (indisponible)" href="/404.html">Qui suis-je ?</a>
+            <a class="nav-lnk" title="À propos de moi (indisponible)" href="/404.html">À propos de moi</a>
             <span id="switch-lang" title="Accéder à la page en anglais" onclick="window.open(enLink, '_self')">EN</span>
         </nav>
     </header>

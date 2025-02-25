@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8"/>
     <meta name="author" content="Projects"/>
-    <title>Eraldor - My Projets</title>
+    <title>Eraldor - My Projects</title>
     <link rel="icon" href="/assets/media/eraldor-avatar.png"/>
     <link rel="stylesheet" href="/assets/code/shared.css"/>
     <link rel="stylesheet" href="/assets/code/projects.css">
@@ -11,19 +11,29 @@
 <body>
     <h1>My Projects</h1>
     <h2>Here is a list of the very few projects I have going on</h2>
+    <main>
     <div class="project" onclick="window.open('https://github.com/Eraldorure/eraldorure.github.io', '_blank')">
         <div class="desc">
             <h4>eraldorure.github.io</h4>
             <p>One could say this website is my first project.</p>
+            <p class="status">BETA</p>
         </div>
     </div>
-    <div class="project">
+    <div class="project" onclick="window.open('https://github.com/Eraldorure/exprobj.py', '_blank')">
+        <div class="desc">
+            <h4>exprobj.py</h4>
+            <p>A command-line editor for math formulas that lets you easily make calculations and manipulations that would otherwise be tedious to do by hand.</p>
+            <p class="status">ALPHA</p>
+        </div>
+    </div>
+    <div class="project" style="cursor: default">
         <div class="desc">
             <h4>I may be up to something else...</h4>
             <p>I may be working onto something that has not been put here yet. If you want to know more, you can check my <a href="https://github.com/Eraldorure?tab=repositories" target="_blank">GitHub</a> as well as my other socials.</p>
             <p>If I deem that something worthy, I will show it there along with the rest.</p>
         </div>
     </div>
+    </main>
 <script src="/assets/code/header-footer-en.js"></script>
 <script>
     document.getElementsByClassName('nav-lnk')[1].classList.add('current-nav-lnk')

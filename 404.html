@@ -57,7 +57,7 @@
     <a id="lnk" href="https://eraldorure.github.io">Wanna go back to the beginning?</a>
 </main>
 <script>
-    if (navigator.language === 'fr') {
+    if (navigator.language.slice(0, 2) === 'fr') {
         document.getElementById('msg').innerHTML = "Il semblerait que vous vous soyez égaré.";
         document.getElementById('lnk').innerHTML = "On recommence ?";
         document.body.lang = 'fr';

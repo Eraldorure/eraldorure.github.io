@@ -7,6 +7,7 @@
     margin: auto;
     top: 50%;
     left: 50%;
+    user-select: none;
     text-decoration: none;
     transform: translate(-50%, -50%);
 }
@@ -26,6 +27,13 @@ body:has(#main-title:hover) {
     }
 }
 
+body {
+    background-color: #099;
+}
+header {
+    box-shadow: none;
+    background-color: transparent;
+}
 h1 {
     background-color: transparent;
     box-shadow: none;

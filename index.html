@@ -22,7 +22,7 @@
     <p id="1">Redirecting...</p>
     <p id="2">If this message doesn't go away, please try to reload the page</p>
 <script>
-    if (navigator.language === 'fr') {
+    if (navigator.language.slice(0, 2) === 'fr') {
         window.location.href = '/fr/'
     } else {
         window.location.href = '/en/'
