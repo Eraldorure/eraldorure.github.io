@@ -1,31 +1,119 @@
 <!DOCTYPE html>
-<html lang="">
+<html lang="en">
 <head>
-    <meta charset="UTF-8">
+    <meta charset="UTF-8"/>
     <title>Eraldor</title>
+    <link rel="stylesheet" href="style.css"/>
+
     <style>
-        body {
-            background-color: #222;
-            color: #eee;
-            font-family: sans-serif;
-            text-align: center;
+        #bloom1 {
+            top: 0;
+            left: 50%;
+            width: 800px;
+            max-width: 80vw;
+            height: 30px;
+            transform: translate(-50%, -100%);
         }
-        #1 {
-            font-size: 2em;
+        #bloom2 {
+            left: 0;
+            width: 50px;
+            height: 250px;
+            transform: translate(-100%, -50%);
         }
-        #2 {
-            font-size: 1em;
+        #bloom3 {
+            right: 0;
+            width: 50px;
+            height: 250px;
+            transform: translate(100%, -100%);
+        }
+        #welcome {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            #logo {
+                width: 220px;
+                height: 220px;
+                margin-top: 15vh;
+            }
+        }
+        #description div.blur:not(.inline) {
+            padding-top: 40px;
+        }
+        #projects #cards {
+            display: flex;
+            justify-content: space-between;
+            .card {
+                width: 100%;
+            }
+            .card:nth-child(2) {
+                margin-inline: 50px;
+            }
+        }
+        section div.blur.inline {
+            transform: translate(20px, 28px);
+            z-index: 2;
         }
     </style>
+
 </head>
 <body>
-    <p id="1">Redirecting...</p>
-    <p id="2">If this message doesn't go away, please try to reload the page</p>
+    <div class="bloom" id="bloom1"></div>
+
+    <section id="welcome" class="full">
+        <h1>helo evry1</h1>
+        <img src="assets/eraldor.png" alt="Eraldor" id="logo"/>
+    </section>
+
+    <section id="description">
+        <div class="blur inline">
+            <h2>how u doin?</h2>
+        </div>
+        <div class="blur">
+            <p>well i'm doing good thank u. and u how are you doin on this fine day?<br/>i really like brushing my teeth with hedgehog quills</p>
+            <p>alright now come on im gonna go eat shoes cuz im hungry</p>
+        </div>
+    </section>
+
+    <div class="bloom" id="bloom2"></div>
+
+    <section id="projects">
+        <div class="blur inline">
+            <h2>uwu nyaaaa~</h2>
+        </div>
+        <div id="cards">
+            <div class="blur card" id="test" onclick="alertWidthID('test')">
+                <h3>UwU</h3>
+                <img src="https://placehold.co/300x180" alt="placeholder"/>
+                <p>hewwo<br/>o(〃＾▽＾〃)o</p>
+            </div>
+            <div class="blur card">
+                <h3>OwO</h3>
+                <img src="https://placehold.co/300x180" alt="placeholder"/>
+            </div>
+            <div class="blur card">
+                <h3>TwT</h3>
+                <img src="https://placehold.co/300x180" alt="placeholder"/>
+            </div>
+        </div>
+    </section>
+
+    <div class="bloom" id="bloom3"></div>
+
+    <footer>
+        <ul>
+            <li>Website made by myself</li>
+            <li>Copyright © Eraldor 2025</li>
+        </ul>
+        <ul>
+            <li><a href="mailto:email@example.com">email@example.com</a></li>
+            <li><a href="https://github.com/Eraldorure"><img src="assets/github-logo.svg" alt="GitHub" class="icon"></a></li>
+        </ul>
+    </footer>
+
 <script>
-    if (navigator.language.slice(0, 2) === 'fr') {
-        window.location.href = '/fr/'
-    } else {
-        window.location.href = '/en/'
+    function alertWidthID(id) {
+        alert(document.getElementById(id).width);
     }
 </script>
 </body>
